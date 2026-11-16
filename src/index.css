@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-aubergine: #45243d;
+  --color-aubergine-deep: #321a2d;
+  --color-gold: #c6a15b;
+  --color-gold-soft: #d4b87a;
+  --color-ivory: #f8f6f0;
+  --color-ivory-dark: #efebe1;
+  --color-sage: #89917b;
+  --color-charcoal: #292725;
+  --color-white: #ffffff;
+
+  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Outfit", "Segoe UI", sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 14px;
+
+  --shadow-soft: 0 18px 50px -24px rgb(41 39 37 / 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background: var(--color-ivory);
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-gold) 35%, white);
+  color: var(--color-aubergine);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold),
+    transparent
+  );
+}
+
+.gold-rule {
+  width: 48px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.ken-burns {
+  animation: kenBurns 14s ease-out forwards;
+}
+
+@keyframes kenBurns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
