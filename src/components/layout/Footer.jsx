@@ -84,10 +84,19 @@ export default function Footer() {
               Contact
             </h2>
             <address className="mt-5 space-y-3 text-sm not-italic text-ivory/80">
-              <p>{contact.email}</p>
-              <p>{contact.phone}</p>
+              <p>
+                <a href={contact.emailHref} className="transition-colors hover:text-gold">
+                  {contact.email}
+                </a>
+              </p>
+              <p>
+                <a href={contact.phoneHref} className="transition-colors hover:text-gold">
+                  {contact.phone}
+                </a>
+              </p>
               <p>{contact.address}</p>
             </address>
+            {contact.social.length > 0 ? (
             <ul className="mt-6 flex items-center gap-3">
               {contact.social.map((item) => {
                 const Icon = socialIcons[item.name]
@@ -104,6 +113,7 @@ export default function Footer() {
                 )
               })}
             </ul>
+            ) : null}
           </div>
         </div>
 

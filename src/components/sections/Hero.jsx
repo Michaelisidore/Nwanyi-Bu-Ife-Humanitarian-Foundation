@@ -35,12 +35,12 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.9, ease: 'easeInOut' }}
-          className={`absolute inset-0 h-full w-full object-cover ${reduce ? '' : 'ken-burns'}`}
+          className={`absolute inset-0 h-full w-full object-cover ${slide.position} ${reduce ? '' : 'ken-burns'}`}
         />
       </AnimatePresence>
 
       <div
-        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(41,39,37,0.18)_0%,rgba(69,36,61,0.22)_38%,rgba(41,39,37,0.72)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(180deg,rgba(41,39,37,0.28)_0%,rgba(41,39,37,0.16)_42%,rgba(32,22,28,0.66)_100%)]"
         aria-hidden="true"
       />
 

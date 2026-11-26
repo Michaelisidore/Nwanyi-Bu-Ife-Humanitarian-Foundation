@@ -7,7 +7,7 @@ export default function Founder() {
     <section id="founder" className="bg-ivory py-24 sm:py-28">
       <Container>
         <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:gap-16">
-          <Reveal>
+          <Reveal className="order-2 lg:order-1">
             <figure className="relative mx-auto w-full max-w-md lg:sticky lg:top-28">
               <div className="absolute -inset-3 rounded-[18px] border border-gold/50" aria-hidden="true" />
               <img
@@ -18,7 +18,7 @@ export default function Founder() {
             </figure>
           </Reveal>
 
-          <div>
+          <div className="order-1 lg:order-2">
             <Reveal>
               <p className="text-[0.72rem] font-medium tracking-[0.28em] text-gold uppercase">
                 Leadership

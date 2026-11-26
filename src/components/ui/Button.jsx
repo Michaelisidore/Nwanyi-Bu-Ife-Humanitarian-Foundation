@@ -6,6 +6,8 @@ export default function Button({
   variant = 'gold',
   className = '',
   onClick,
+  target,
+  rel,
 }) {
   const styles = {
     gold:
@@ -20,6 +22,8 @@ export default function Button({
     <Tag
       href={href}
       type={type}
+      target={target}
+      rel={rel}
       onClick={onClick}
       className={`inline-flex items-center justify-center rounded-[var(--radius-md)] px-7 py-3 text-[0.72rem] font-medium tracking-[0.18em] uppercase transition-colors duration-300 ${styles[variant]} ${className}`}
     >

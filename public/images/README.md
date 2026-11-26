@@ -13,17 +13,17 @@ Replace these files in place. Keep the filenames so the site updates automatical
 - `founder/portrait.jpg` — founder portrait (Ambassador Nwakaego Maureen Anagbogu)
 - `founder/background.jpg` — full-width outreach photograph behind the founder section
 
-## Homepage slider
+## Outreach photographs
 
-- `hero/slide-01.jpg`
-- `hero/slide-02.jpg`
-- `hero/slide-03.jpg`
+Used across the hero and About Us sections. Originals are kept separately; these are the files the site serves.
 
-## About Us gallery
-
-- `about/gallery-01.jpg` (featured)
-- `about/gallery-02.jpg`
-- `about/gallery-03.jpg`
-- `about/gallery-04.jpg`
+- `outreach/children-outreach.jpg` — hero
+- `outreach/food-outreach.jpg` — hero
+- `outreach/community-group.jpg` — hero
+- `outreach/food-handover.jpg` — About Us
+- `outreach/certificates.jpg` — About Us
+- `outreach/award-honour.jpg` — About Us
+- `outreach/relief-support.jpg` — About Us
+- `outreach/community-honour.jpg` — About Us
 
 Use photographs with a 4:3 or 16:9 crop where possible. The site uses `object-fit: cover`.

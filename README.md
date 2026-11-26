@@ -24,4 +24,4 @@ Deploy the `dist` folder, or connect the repository to Vercel. No backend is req
 - Photographs: `public/images/` (see `public/images/README.md`)
 - Logo: `public/images/logo.png` and `public/favicon.png`
 
-The contact form stays silent until `VITE_FORM_ENDPOINT` is set (see `.env.example`).
+Contact details and the sponsorship WhatsApp link live in `src/data/site.js`.
