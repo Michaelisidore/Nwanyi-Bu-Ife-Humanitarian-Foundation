@@ -69,6 +69,11 @@ export const heroSlides = [
     alt: 'Community members stand together under a canopy during a Nwanyi Bu Ife gathering.',
     position: 'object-[center_46%]',
   },
+  {
+    src: '/images/hero/IMG_6835.jpg',
+    alt: 'A humanitarian activity by Nwanyi Bu Ife Foundation.',
+    position: 'object-center',
+  },
 ]
 
 export const about = {
